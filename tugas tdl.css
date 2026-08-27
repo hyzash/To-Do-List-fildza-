@@ -1,0 +1,28 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, sans-serif; }
+body { background: #f0f2f5; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+.container { background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 550px; }
+h2 { margin-bottom: 15px; color: #333; text-align: center; }
+.search-section, .input-section { display: flex; gap: 8px; margin-bottom: 12px; }
+input[type="text"], select { padding: 8px 10px; border: 1px solid #ddd; border-radius: 6px; outline: none; font-size: 13px; }
+#searchInput { width: 100%; }
+#taskInput { flex: 2; }
+select { flex: 1; }
+input[type="text"]:focus, select:focus { border-color: #4a90e2; }
+button { padding: 8px 12px; background: #4a90e2; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 13px; white-space: nowrap; }
+button:hover { background: #357abd; }
+.filter-section { display: flex; justify-content: center; gap: 8px; margin-bottom: 15px; }
+.filter-btn { background: #e4e6eb; color: #333; padding: 6px 12px; font-size: 12px; }
+.filter-btn.active { background: #4a90e2; color: white; }
+ul { list-style: none; max-height: 300px; overflow-y: auto; }
+li { display: flex; justify-content: space-between; align-items: center; background: #fafafa; padding: 10px; border: 1px solid #eee; border-radius: 6px; margin-bottom: 8px; }
+.task-info { display: flex; flex-direction: column; gap: 4px; flex: 1; cursor: pointer; }
+.task-text { font-size: 14px; color: #333; }
+li.completed .task-text { text-decoration: line-through; color: #888; }
+.task-badges { display: flex; gap: 6px; }
+.badge { font-size: 10px; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: white; }
+.badge.Penting { background: #e74c3c; }
+.badge.Sedang { background: #f39c12; }
+.badge.Santai { background: #27ae60; }
+.badge.tag { background: #9b59b6; }
+.delete-btn { background: #e74c3c; padding: 5px 8px; font-size: 11px; }
+.delete-btn:hover { background: #c0392b; }
